@@ -25,8 +25,7 @@ jobs:
         run: pwd
 
 
-        -name: 'Testing Printing '
-        run: eecho Nada
+    
 
 
 
