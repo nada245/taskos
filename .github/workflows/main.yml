@@ -20,10 +20,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: 'Testing Github action'
+      - name: 'before'
+        run: ls
+      - uses: actions/checkout@v3  
+      - name: ' after'
         run: pwd
-
-
     
 
 
