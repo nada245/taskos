@@ -21,8 +21,8 @@ jobs:
 
 
     steps:
-      -name: 'Testing Github action'
-        run: pwd
+      - name: 'Testing Github action'
+      run: pwd
 
 
     
