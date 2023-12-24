@@ -1,8 +1,4 @@
-FROM openjdk
-WORKDIR /application
-COPY nada.java .
-RUN javac nada.java
-CMD java nada
-
-
-
+FROM nginx:alpine
+RUN mkdir /my-files
+COPY index.html /my-files
+COPY nginx.conf /etc/nginx

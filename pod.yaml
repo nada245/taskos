@@ -1,0 +1,16 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: my-web-app
+  labels:
+    app: db
+spec:
+  containers:
+    - name: my-nginx-app
+      image: nadamohamed030/nginx-fci
+      imagePullPolicy: IfNotPresent
+
+      ports:
+        - containerPort: 80
+
+      
